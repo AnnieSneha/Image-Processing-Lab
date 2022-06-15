@@ -8,6 +8,8 @@ Program 1:Develop a program to display Grayscale image using read and write oper
  cv2.destroyAllWindows()<br>
   
 OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/173816090-77f93d35-0f19-4bc4-b5bc-f990d38e3f4c.png)
+
 
  --------------------------------------------------------------------------------------------------------------------------- 
 Program 2:Develop a program to display image using matplotlib
