@@ -10,7 +10,6 @@ Program 1:Develop a program to display Grayscale image using read and write oper
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173816090-77f93d35-0f19-4bc4-b5bc-f990d38e3f4c.png)
 
-
  --------------------------------------------------------------------------------------------------------------------------- 
 Program 2:Develop a program to display image using matplotlib
  
@@ -19,7 +18,7 @@ Program 2:Develop a program to display image using matplotlib
  img=mping.imread('f2.jpg')<br>
  plt.imshow(img)<br>
  OUTPUT:<br>
-  ![image](https://user-images.githubusercontent.com/97939284/173809538-19372b96-f0f6-49f8-bc2a-f60dd9ae31af.png) 
+ ![image](https://user-images.githubusercontent.com/97939284/173809538-19372b96-f0f6-49f8-bc2a-f60dd9ae31af.png) 
 ------------------------------------------------------------------------------------------------------------------------------
 Program 3:Develop a program to perform linear transformation 
 
@@ -50,7 +49,7 @@ OUTPUT:<br>
 (255, 255, 0)<br>
 (255, 0, 0)<br>
 (255, 192, 203)<br>
-(0, 0, 255)
+(0, 0, 255)<br>
 --------------------------------------------------------------------------------------------------------------------------------
 Program 5:Develop a program to create image using colors<br>
 
