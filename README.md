@@ -17,3 +17,11 @@ Program 2:Develop a program to display image using matplotlib
   plt.imshow(img)<br>
    OUTPUT:
   ![image](https://user-images.githubusercontent.com/97939284/173809538-19372b96-f0f6-49f8-bc2a-f60dd9ae31af.png) 
+
+Program 2:Develop a program to display image using matplotlib
+from PIL import Image
+img=Image.open('l1.jpg')
+img=img.rotate(180)
+img.show()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
