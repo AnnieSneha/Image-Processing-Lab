@@ -98,5 +98,6 @@ Mode: RGB<br>
 Size: (474, 313)<br>
 Width: 474<br>
 Height: 313<br>
+
 -------------------------------------------------------------------------------------------------------------------------------------
- 
+ Program 7:Write a program to display the image attributes<br>
