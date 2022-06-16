@@ -107,7 +107,7 @@ import cv2<br>
 img=cv2.imread('f1.jpg')<br>
 print('original image length width',img.shape)<br>
 cv2.imshow('original image',img)<br>
-cv2.waitKey(0)
+cv2.waitKey(0)<br>
 #to show the resized image<br>
 imgresize=cv2.resize(img,(150,160))<br>
 cv2.imshow('Resized image',imgresize)
