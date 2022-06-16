@@ -83,35 +83,35 @@ OUTPUT:<br>
 -------------------------------------------------------------------------------------------------------------------------------------
 Program 7:Write a program to display the image attributes<br>
 
-import cv2
-#read the image file
-img=cv2.imread('b2.jpg')
-cv2.imshow("RGB",img)
-cv2.waitKey(0)
-#gray scale
-img=cv2.imread('b2.jpg',0)
-cv2.imshow("Gray",img)
-cv2.waitKey(0)
-#Binary image
-ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)
-cv2.imshow("Binary",bw_img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+import cv2<br><br>
+#read the image file<br>
+img=cv2.imread('b2.jpg')<br>
+cv2.imshow("RGB",img)<br>
+cv2.waitKey(0)<br>
+#gray scale<br>
+img=cv2.imread('b2.jpg',0)<br>
+cv2.imshow("Gray",img)<br>
+cv2.waitKey(0)<br>
+#Binary image<br>
+ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)<br>
+cv2.imshow("Binary",bw_img)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
 
 OUTPUT:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Program 9:
 
-import cv2
-img=cv2.imread('f1.jpg')
-print('original image length width',img.shape)
-cv2.imshow('original image',img)
+import cv2<br>
+img=cv2.imread('f1.jpg')<br>
+print('original image length width',img.shape)<br>
+cv2.imshow('original image',img)<br>
 cv2.waitKey(0)
-#to show the resized image
-imgresize=cv2.resize(img,(150,160))
+#to show the resized image<br>
+imgresize=cv2.resize(img,(150,160))<br>
 cv2.imshow('Resized image',imgresize)
-print('Resized image length width',imagresize.shape)
-cv2.waitKey(0)
+print('Resized image length width',imagresize.shape)<br>
+cv2.waitKey(0)<br>
 
 OUTPUT:
