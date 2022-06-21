@@ -1,5 +1,5 @@
-# image-processing-lab
-Program 1:Develop a program to display Grayscale image using read and write operations
+
+# Program 1:Develop a program to display Grayscale image using read and write operations
    
  import cv2<br>
  img=cv2.imread('b1.jpg',0)<br>
@@ -11,7 +11,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173816090-77f93d35-0f19-4bc4-b5bc-f990d38e3f4c.png)
 
  --------------------------------------------------------------------------------------------------------------------------- 
-Program 2:Develop a program to display image using matplotlib
+# Program 2:Develop a program to display image using matplotlib
  
  import matplotlib.image as mping<br>
  import matplotlib.pyplot as plt<br>
@@ -22,7 +22,7 @@ Program 2:Develop a program to display image using matplotlib
  ![image](https://user-images.githubusercontent.com/97939284/173809538-19372b96-f0f6-49f8-bc2a-f60dd9ae31af.png) 
  
 ------------------------------------------------------------------------------------------------------------------------------
-Program 3:Develop a program to perform linear transformation 
+# Program 3:Develop a program to perform linear transformation 
 
 from PIL import Image<br>
 img=Image.open('l1.jpg')<br>
@@ -35,7 +35,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173813194-5f2722a6-034c-4747-b1dc-07a53a384e08.png)
 
 -------------------------------------------------------------------------------------------------------------------------------
-Program 4:Develop a program to covert color string to RGB color values
+# Program 4:Develop a program to covert color string to RGB color values
 
 from PIL import ImageColor<br>
 img1=ImageColor.getrgb("yellow")<br>
@@ -54,7 +54,7 @@ OUTPUT:<br>
 (0, 0, 255)<br>
 
 --------------------------------------------------------------------------------------------------------------------------------
-Program 5:Develop a program to create image using colors<br>
+# Program 5:Develop a program to create image using colors<br>
 
 from PIL import Image<br>
 img=Image.new("RGB",(200,400),(0, 0, 255))<br>
@@ -64,7 +64,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173813696-f552419d-9b39-4595-bf01-92f689afc915.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------
-Program 6:Develop a program to visualise the image using various color spaces
+# Program 6:Develop a program to visualise the image using various color spaces
 
 import cv2<br>
 import matplotlib.pyplot as plt<br>
@@ -81,7 +81,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173814560-3c54a329-6356-4a2d-884c-c6231bc1ac76.png)<br>
 
 -------------------------------------------------------------------------------------------------------------------------------------
-Program 7:Write a program to display the image attributes<br>
+# Program 7:Write a program to display the image attributes<br>
 
 import cv2<br><br>
 #read the image file<br>
@@ -101,7 +101,7 @@ cv2.destroyAllWindows()<br>
 OUTPUT:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-Program 9:
+# Program 9:
 
 import cv2<br>
 img=cv2.imread('f1.jpg')<br>
