@@ -127,3 +127,13 @@ plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175005167-37733182-adc1-4404-b89c-e98949093711.png)
+
+
+import cv2
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+img=cv2.imread('Nemo.jpg')
+plt.imshow(img)
+plt.show()
+
+
