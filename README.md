@@ -149,3 +149,6 @@ plt.subplot(1,2,2)
 plt.imshow(result)
 plt.show()
 
+![image](https://user-images.githubusercontent.com/97939284/175018103-8f9c2618-3c9e-4b98-820a-aefe1a99c8e0.png)
+
+
