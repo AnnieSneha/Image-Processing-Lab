@@ -168,7 +168,8 @@ final_mask=mask+mask_white<br>
 final_result=cv2.bitwise_and(img,img,mask=final_mask)<br>
 plt.subplot(1,2,1)<br>
 plt.imshow(final_mask,cmap="gray")<br>
-plt.subplot(1,2,2)
-plt.imshow(final_result)
-plt.show()
+plt.subplot(1,2,2)<br>
+plt.imshow(final_result)<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/97939284/175022161-6a5274ee-c347-4a21-b126-471b2e687a6e.png)<br>
 
