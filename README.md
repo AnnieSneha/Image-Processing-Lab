@@ -115,3 +115,15 @@ print('Resized image length width',imagresize.shape)<br>
 cv2.waitKey(0)<br>
 
 OUTPUT:
+
+# Program 10 :Write a program to read image using URL
+
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+url='https://dpbfm6h358sh7.cloudfront.net/images/5391016/1165772661.jpg'<br>
+image=io.imread(url)<br>
+plt.imshow(image)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/175005167-37733182-adc1-4404-b89c-e98949093711.png)
