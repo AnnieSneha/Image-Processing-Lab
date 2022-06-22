@@ -161,6 +161,7 @@ plt.imshow(mask_white,cmap="gray")<br>
 plt.subplot(1,2,2)<br>
 plt.imshow(result_white)<br>
 plt.show()<br>
+![image](https://user-images.githubusercontent.com/97939284/175021322-e0c791b4-b034-459b-872a-fdab3c014de8.png)
 
 
 final_mask=mask+mask_white<br>
