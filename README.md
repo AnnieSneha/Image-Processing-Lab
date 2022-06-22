@@ -136,4 +136,5 @@ img=cv2.imread('Nemo.jpg')
 plt.imshow(img)
 plt.show()
 
+![image](https://user-images.githubusercontent.com/97939284/175016581-f6306b36-20bf-4e24-bb37-078e583ec0a5.png)
 
