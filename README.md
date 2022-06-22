@@ -152,4 +152,13 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/97939284/175018103-8f9c2618-3c9e-4b98-820a-aefe1a99c8e0.png)
 ![image](https://user-images.githubusercontent.com/97939284/175018193-4e5aaff2-5456-4579-96e9-955723612edf.png)
 
+light_white=(0,0,200)
+dark_white=(145,60,255)
+mask_white=cv2.inRange(hsv_img,light_white,dark_white)
+result_white=cv2.bitwise_and(img,img,mask=mask_white)
+plt.subplot(1,2,1)
+plt.imshow(mask_white,cmap="gray")
+plt.subplot(1,2,2)
+plt.imshow(result_white)
+plt.show()
 
