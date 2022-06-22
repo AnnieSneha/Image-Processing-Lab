@@ -150,7 +150,7 @@ plt.imshow(result)<br>
 plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97939284/175018103-8f9c2618-3c9e-4b98-820a-aefe1a99c8e0.png)<br>
-![image](https://user-images.githubusercontent.com/97939284/175018193-4e5aaff2-5456-4579-96e9-955723612edf.png)<br>
+
 
 light_white=(0,0,200)<br>
 dark_white=(145,60,255)
