@@ -216,7 +216,22 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175270050-30ce5312-883c-49d8-8789-75d5a3bdb533.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/175270086-88159f3a-e0e8-425c-a57a-3725c409ff40.png)<br>
 
-# Program13: Develop the program to change the image to different color spaces
+# Program 13: Develop the program to change the image to different color spaces
+
+import cv2<br> 
+img=cv2.imread('D:\\R.jpg')<br> 
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br> 
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br> 
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br> 
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)<br> 
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br> 
+cv2.imshow("GRAY image",gray)<br> 
+cv2.imshow("HSV image",hsv)<br> 
+cv2.imshow("LAB image",lab)<br> 
+cv2.imshow("HLS image",hls)<br> 
+cv2.imshow("YUV image",yuv)<br> 
+cv2.waitKey(0)<br> 
+cv2.destroyAllWindows()<br> 
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175273905-b150309d-e394-451e-b2e4-e89a55e3bd53.png)<br>
@@ -225,6 +240,21 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175275129-a8bec00c-081e-41da-abff-164068546848.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/175274788-3ce92a66-1786-429d-88dc-601be8887b18.png)<br>
 
+# Program 14 :Program to create an image using 2D array
+
+import cv2 as c
+import numpy as np
+from PIL import Image
+array=np.zeros([100,200,3],dtype=np.uint8)
+array[:,:100]=[255, 192, 203]
+array[:,100:]=[0,0,255]
+img=Image.fromarray(array)
+img.save('image1.png')
+img.show()
+c.waitKey(0)
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/175276384-61662c7b-8a30-4104-b4ad-327a1a03b6e0.png)
 
 
 
