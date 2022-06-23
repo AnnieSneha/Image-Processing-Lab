@@ -110,7 +110,9 @@ cv2.imshow('Resized image',imgresize)
 print('Resized image length width',imagresize.shape)<br>
 cv2.waitKey(0)<br>
 
-OUTPUT:
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/175279594-9c64468f-17c0-4609-acd2-7ac9fcb4720b.png)
+
 
 # Program 10 :Write a program to read image using URL
 
