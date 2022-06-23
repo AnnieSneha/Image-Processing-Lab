@@ -10,7 +10,6 @@
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173816090-77f93d35-0f19-4bc4-b5bc-f990d38e3f4c.png)
 
- --------------------------------------------------------------------------------------------------------------------------- 
 # Program 2:Develop a program to display image using matplotlib
  
  import matplotlib.image as mping<br>
@@ -21,7 +20,6 @@ OUTPUT:<br>
  OUTPUT:<br>
  ![image](https://user-images.githubusercontent.com/97939284/173809538-19372b96-f0f6-49f8-bc2a-f60dd9ae31af.png) 
  
-------------------------------------------------------------------------------------------------------------------------------
 # Program 3:Develop a program to perform linear transformation 
 
 from PIL import Image<br>
@@ -34,7 +32,6 @@ cv2.destroyAllWindows()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173813194-5f2722a6-034c-4747-b1dc-07a53a384e08.png)
 
--------------------------------------------------------------------------------------------------------------------------------
 # Program 4:Develop a program to covert color string to RGB color values
 
 from PIL import ImageColor<br>
@@ -53,7 +50,6 @@ OUTPUT:<br>
 (255, 192, 203)<br>
 (0, 0, 255)<br>
 
---------------------------------------------------------------------------------------------------------------------------------
 # Program 5:Develop a program to create image using colors<br>
 
 from PIL import Image<br>
@@ -63,7 +59,6 @@ img.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173813696-f552419d-9b39-4595-bf01-92f689afc915.png)
 
----------------------------------------------------------------------------------------------------------------------------------
 # Program 6:Develop a program to visualise the image using various color spaces
 
 import cv2<br>
@@ -80,7 +75,6 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173814439-9890ea4d-504b-4b0f-b1d5-24dbe52f9b18.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/173814560-3c54a329-6356-4a2d-884c-c6231bc1ac76.png)<br>
 
--------------------------------------------------------------------------------------------------------------------------------------
 # Program 7:Write a program to display the image attributes<br>
 
 import cv2<br><br>
@@ -100,7 +94,7 @@ cv2.destroyAllWindows()<br>
 
 OUTPUT:
 
-------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Program 9:
 
 import cv2<br>
@@ -180,7 +174,7 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97939284/175022486-66bbc556-701b-4919-a3f5-f046379189e8.png)
 
-# Program 11: Write a program to perform arith,atic operation on image
+# Program 12: Write a program to perform arith,atic operation on image
 
 import cv2
 import matplotlib.image as mpimg
@@ -215,5 +209,7 @@ plt.show()
 
 #saving the output image
 cv2.imwrite('output.jpg',fimg4)
+
+OUTPUT:
 
 
