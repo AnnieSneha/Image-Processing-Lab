@@ -161,6 +161,7 @@ plt.imshow(mask_white,cmap="gray")<br>
 plt.subplot(1,2,2)<br>
 plt.imshow(result_white)<br>
 plt.show()<br>
+
 ![image](https://user-images.githubusercontent.com/97939284/175021322-e0c791b4-b034-459b-872a-fdab3c014de8.png)
 
 
@@ -171,11 +172,13 @@ plt.imshow(final_mask,cmap="gray")<br>
 plt.subplot(1,2,2)<br>
 plt.imshow(final_result)<br>
 plt.show()<br>
+
 ![image](https://user-images.githubusercontent.com/97939284/175022161-6a5274ee-c347-4a21-b126-471b2e687a6e.png)<br>
 
-blur=cv2.GaussianBlur(final_result,(7,7),0)
-plt.imshow(blur)
-plt.show()
+blur=cv2.GaussianBlur(final_result,(7,7),0)<br>
+plt.imshow(blur)<br>
+plt.show()<br>
+
 ![image](https://user-images.githubusercontent.com/97939284/175022486-66bbc556-701b-4919-a3f5-f046379189e8.png)
 
 
