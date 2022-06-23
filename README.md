@@ -99,20 +99,23 @@ OUTPUT:<br>
 
 # Program 9:
 
-import cv2<br>
-img=cv2.imread('f1.jpg')<br>
-print('original image length width',img.shape)<br>
-cv2.imshow('original image',img)<br>
-cv2.waitKey(0)<br>
-#to show the resized image<br>
-imgresize=cv2.resize(img,(150,160))<br>
-cv2.imshow('Resized image',imgresize)
-print('Resized image length width',imagresize.shape)<br>
-cv2.waitKey(0)<br>
+import cv2
+img=cv2.imread('b4.jpg')
+print('original image length width',img.shape)
+cv2.imshow('original image',img)
+cv2.waitKey(0)
+#to show the resized image
+imgresize=cv2.resize(img,(150,160))
+cv2.imshow('Resized image',imgresize) 
+print('Resized image length width',imgresize.shape)
+cv2.waitKey(0)
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97939284/175279594-9c64468f-17c0-4609-acd2-7ac9fcb4720b.png)
+original image length width (399, 600, 3)<br>
+Resized image length width (160, 150, 3)<br>
 
+![image](https://user-images.githubusercontent.com/97939284/175283009-9af4da4b-67f5-48b2-a1e0-294b87e8107d.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/175283093-5cb847aa-8fc1-45a9-996b-59ba86584070.png)
 
 # Program 10 :Write a program to read image using URL
 
