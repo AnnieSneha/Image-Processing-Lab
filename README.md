@@ -128,6 +128,7 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175005167-37733182-adc1-4404-b89c-e98949093711.png)
 
+# Program 11:Write a program to mask and blur the image
 
 import cv2<br>
 import matplotlib.image as mpimg<br>
@@ -151,7 +152,6 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97939284/175018103-8f9c2618-3c9e-4b98-820a-aefe1a99c8e0.png)<br>
 
-
 light_white=(0,0,200)<br>
 dark_white=(145,60,255)
 mask_white=cv2.inRange(hsv_img,light_white,dark_white)<br>
@@ -163,7 +163,6 @@ plt.imshow(result_white)<br>
 plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97939284/175021322-e0c791b4-b034-459b-872a-fdab3c014de8.png)
-
 
 final_mask=mask+mask_white<br>
 final_result=cv2.bitwise_and(img,img,mask=final_mask)<br>
@@ -180,5 +179,41 @@ plt.imshow(blur)<br>
 plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97939284/175022486-66bbc556-701b-4919-a3f5-f046379189e8.png)
+
+# Program 11: Write a program to perform arith,atic operation on image
+
+import cv2
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+
+#Reading image files
+img1=cv2.imread('flo1.jpg')
+img2=cv2.imread('flo2.jpg')
+
+#Applying Numpy addition on images
+fimg1=img1+img2
+plt.imshow(fimg1)
+plt.show()
+
+#Saving the ouput image
+cv2.imwrite('output.jpg',fimg1)
+fimg2=img1-img2
+plt.imshow(fimg2)
+plt.show()
+
+#saving the ouput image
+cv2.imwrite('output.jpg',fimg2)
+fimg3=img1*img2
+plt.imshow(fimg3)
+plt.show()
+
+#Saving the output image
+cv2.imwrite('output.jpg',fimg3)
+fimg4=img1/img2
+plt.imshow(fimg4)
+plt.show()
+
+#saving the output image
+cv2.imwrite('output.jpg',fimg4)
 
 
