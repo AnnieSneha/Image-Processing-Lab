@@ -176,42 +176,45 @@ plt.show()<br>
 
 # Program 12: Write a program to perform arith,atic operation on image
 
-import cv2
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
+import cv2<br>
+import matplotlib.image as mpimg<br>
+import matplotlib.pyplot as plt<br>
 
-#Reading image files
-img1=cv2.imread('flo1.jpg')
-img2=cv2.imread('flo2.jpg')
+#Reading image files<br>
+img1=cv2.imread('flo1.jpg')<br>
+img2=cv2.imread('flo2.jpg')<br>
 
-#Applying Numpy addition on images
-fimg1=img1+img2
-plt.imshow(fimg1)
-plt.show()
+#Applying Numpy addition on images<br>
+fimg1=img1+img2<br>
+plt.imshow(fimg1)<br>
+plt.show()<br>
 
-#Saving the ouput image
-cv2.imwrite('output.jpg',fimg1)
-fimg2=img1-img2
-plt.imshow(fimg2)
-plt.show()
+#Saving the ouput image<br>
+cv2.imwrite('output.jpg',fimg1)<br>
+fimg2=img1-img2<br>
+plt.imshow(fimg2)<br>
+plt.show()<br>
 
-#saving the ouput image
-cv2.imwrite('output.jpg',fimg2)
-fimg3=img1*img2
-plt.imshow(fimg3)
-plt.show()
+#saving the ouput image<br>
+cv2.imwrite('output.jpg',fimg2)<br>
+fimg3=img1*img2<br>
+plt.imshow(fimg3)<br>
+plt.show()<br>
 
-#Saving the output image
-cv2.imwrite('output.jpg',fimg3)
-fimg4=img1/img2
-plt.imshow(fimg4)
-plt.show()
+#Saving the output image<br>
+cv2.imwrite('output.jpg',fimg3)<br>
+fimg4=img1/img2<br>
+plt.imshow(fimg4)<br>
+plt.show()<br>
 
-#saving the output image
-cv2.imwrite('output.jpg',fimg4)
+#saving the output image<br>
+cv2.imwrite('output.jpg',fimg4)<br>
 
 OUTPUT:
-![image](https://user-images.githubusercontent.com/97939284/175269380-a4bf888c-9b30-4add-ac24-f7c3cf7257c0.png)
+![image](https://user-images.githubusercontent.com/97939284/175269380-a4bf888c-9b30-4add-ac24-f7c3cf7257c0.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/175270010-a186dfe0-4797-4706-9453-c32c0f1fb01d.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/175270050-30ce5312-883c-49d8-8789-75d5a3bdb533.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/175270086-88159f3a-e0e8-425c-a57a-3725c409ff40.png)<br>
 
 
 
