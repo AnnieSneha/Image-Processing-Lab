@@ -244,18 +244,18 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175275129-a8bec00c-081e-41da-abff-164068546848.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/175274788-3ce92a66-1786-429d-88dc-601be8887b18.png)<br>
 
-# Program 14 :Program to create an image using 2D array
+# Program 14 :Program to create an image using 2D array<br>
 
-import cv2 as c
-import numpy as np
+import cv2 as c<br>
+import numpy as np<br>
 from PIL import Image
-array=np.zeros([100,200,3],dtype=np.uint8)
-array[:,:100]=[255, 192, 203]
-array[:,100:]=[0,0,255]
-img=Image.fromarray(array)
-img.save('image1.png')
-img.show()
-c.waitKey(0)
+array=np.zeros([100,200,3],dtype=np.uint8)<br>
+array[:,:100]=[255, 192, 203]<br>
+array[:,100:]=[0,0,255]<br>
+img=Image.fromarray(array)<br>
+img.save('image1.png')<br>
+img.show()<br>
+c.waitKey(0)<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175276384-61662c7b-8a30-4104-b4ad-327a1a03b6e0.png)
