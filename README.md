@@ -92,8 +92,10 @@ cv2.imshow("Binary",bw_img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUTPUT:
-
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/175278709-775c6722-555e-4a93-8e65-825ab6d4d318.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/175278786-0595d26f-eb31-4ea0-9381-6891c9e5228b.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/175278901-a86de8c1-2293-4c1c-8cfc-c4bbdd39d134.png)<br>
 
 # Program 9:
 
