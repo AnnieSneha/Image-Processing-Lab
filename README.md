@@ -265,4 +265,34 @@ OUTPUT:<br>
 
 # Program 15:De
 
+import cv2
+import matplotlib.pyplot as plt
+image1=cv2.imread('3.jpg',1)
+image2=cv2.imread('3.jpg')
+ax=plt.subplots(figsize=(15,10))
+bitwiseAnd=cv2.bitwise_and(image1,image2)
+bitwiseOr=cv2.bitwise_or(image1,image2)
+bitwiseXor=cv2.bitwise_xor(image1,image2)
+bitwiseNot_img1=cv2.bitwise_not(image1)
+bitwiseNot_img2=cv2.bitwise_not(image2)
+plt.subplot(151)
+plt.imshow(bitwiseAnd)
+plt.subplot(152)
+plt.imshow(bitwiseOr)
+plt.subplot(153)
+plt.imshow(bitwiseXor)
+plt.subplot(154)
+plt.imshow(bitwiseNot_img1)
+plt.subplot(155)
+plt.imshow(bitwiseNot_img2)
+cv2.waitKey(0)
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/176425095-2fb817b6-272c-4aab-9d45-15b9c8a4607d.png)
+![image](https://user-images.githubusercontent.com/97939284/176425110-6c4e7a86-0a30-4b84-8116-af9c499da990.png)
+![image](https://user-images.githubusercontent.com/97939284/176425125-3c44150a-d010-4202-9573-d9ebe9fd7141.png)
+![image](https://user-images.githubusercontent.com/97939284/176425155-f77a8572-ba72-481f-9f2c-e170f717cb76.png)
+![image](https://user-images.githubusercontent.com/97939284/176425181-0fcf234b-3737-4bd8-aa02-1f06ab7bed66.png)
+
+
 
