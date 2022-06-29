@@ -289,10 +289,36 @@ cv2.waitKey(0)
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/176425095-2fb817b6-272c-4aab-9d45-15b9c8a4607d.png)
-![image](https://user-images.githubusercontent.com/97939284/176425110-6c4e7a86-0a30-4b84-8116-af9c499da990.png)
-![image](https://user-images.githubusercontent.com/97939284/176425125-3c44150a-d010-4202-9573-d9ebe9fd7141.png)
-![image](https://user-images.githubusercontent.com/97939284/176425155-f77a8572-ba72-481f-9f2c-e170f717cb76.png)
-![image](https://user-images.githubusercontent.com/97939284/176425181-0fcf234b-3737-4bd8-aa02-1f06ab7bed66.png)
+![image](https://user-images.githubusercontent.com/97939284/176425327-3aa83223-2f3b-47b2-889c-2cbf9b42f162.png)
+
+# Program 1
+
+#importing libraries
+import cv2
+import numpy as np
+image=cv2.imread('g.jpg')
+cv2.imshow('Original Image',image)
+cv2.waitKey(0)
+#Gaussian Blur
+Gaussian=cv2.GaussianBlur(image,(7,7),0)
+cv2.imshow("Gaussian blurring",Gaussian)
+cv2.waitKey(0)
+#Median Blur
+median=cv2.medianBlur(image,5)
+cv2.imshow('Median Blurring',median)
+cv2.waitKey(0)
+#Bilateral Blur
+bilateral=cv2.bilateralFilter(image,9,75,75)
+cv2.imshow('Bilateral Blurring',bilateral)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/176425511-2f74fb3e-1d96-4e85-9c2d-6bccaff083ca.png)
+![image](https://user-images.githubusercontent.com/97939284/176425575-c059d8a4-2c4f-41e1-afd2-a54d99976b53.png)
+![image](https://user-images.githubusercontent.com/97939284/176425626-4fba5400-ec99-46cf-8c63-0ac4ad6a8906.png)
+![image](https://user-images.githubusercontent.com/97939284/176425691-cad7f947-0f02-457a-8b6e-b4880af4bd3a.png)
+
 
 
 
