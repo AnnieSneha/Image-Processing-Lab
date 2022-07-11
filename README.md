@@ -265,53 +265,53 @@ OUTPUT:<br>
 
 # Program 15:De
 
-import cv2
-import matplotlib.pyplot as plt
-image1=cv2.imread('3.jpg',1)
-image2=cv2.imread('3.jpg')
-ax=plt.subplots(figsize=(15,10))
-bitwiseAnd=cv2.bitwise_and(image1,image2)
-bitwiseOr=cv2.bitwise_or(image1,image2)
-bitwiseXor=cv2.bitwise_xor(image1,image2)
-bitwiseNot_img1=cv2.bitwise_not(image1)
-bitwiseNot_img2=cv2.bitwise_not(image2)
-plt.subplot(151)
-plt.imshow(bitwiseAnd)
-plt.subplot(152)
-plt.imshow(bitwiseOr)
-plt.subplot(153)
-plt.imshow(bitwiseXor)
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+image1=cv2.imread('3.jpg',1)<br>
+image2=cv2.imread('3.jpg')<br>
+ax=plt.subplots(figsize=(15,10))<br>
+bitwiseAnd=cv2.bitwise_and(image1,image2)<br>
+bitwiseOr=cv2.bitwise_or(image1,image2)<br>
+bitwiseXor=cv2.bitwise_xor(image1,image2)<br>
+bitwiseNot_img1=cv2.bitwise_not(image1)<br>
+bitwiseNot_img2=cv2.bitwise_not(image2)<br>
+plt.subplot(151)<br>
+plt.imshow(bitwiseAnd)<br>
+plt.subplot(152)<br>
+plt.imshow(bitwiseOr)<br>
+plt.subplot(153)<br>
+plt.imshow(bitwiseXor)<br>
 plt.subplot(154)
-plt.imshow(bitwiseNot_img1)
-plt.subplot(155)
-plt.imshow(bitwiseNot_img2)
-cv2.waitKey(0)
+plt.imshow(bitwiseNot_img1)<br>
+plt.subplot(155)<br>
+plt.imshow(bitwiseNot_img2)<br>
+cv2.waitKey(0)<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97939284/176425095-2fb817b6-272c-4aab-9d45-15b9c8a4607d.png)
+![image](https://user-images.githubusercontent.com/97939284/176425095-2fb817b6-272c-4aab-9d45-15b9c8a4607d.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/176425327-3aa83223-2f3b-47b2-889c-2cbf9b42f162.png)
 
 # Program 1
 
-#importing libraries
-import cv2
-import numpy as np
-image=cv2.imread('g.jpg')
-cv2.imshow('Original Image',image)
-cv2.waitKey(0)
-#Gaussian Blur
-Gaussian=cv2.GaussianBlur(image,(7,7),0)
-cv2.imshow("Gaussian blurring",Gaussian)
-cv2.waitKey(0)
-#Median Blur
-median=cv2.medianBlur(image,5)
-cv2.imshow('Median Blurring',median)
-cv2.waitKey(0)
-#Bilateral Blur
-bilateral=cv2.bilateralFilter(image,9,75,75)
-cv2.imshow('Bilateral Blurring',bilateral)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+#importing libraries<br>
+import cv2<br>
+import numpy as np<br>
+image=cv2.imread('g.jpg')<br>
+cv2.imshow('Original Image',image)<br>
+cv2.waitKey(0)<br>
+#Gaussian Blur<br>
+Gaussian=cv2.GaussianBlur(image,(7,7),0)<br>
+cv2.imshow("Gaussian blurring",Gaussian)<br>
+cv2.waitKey(0)<br>
+#Median Blur<br>
+median=cv2.medianBlur(image,5)<br>
+cv2.imshow('Median Blurring',median)<br>
+cv2.waitKey(0)<br>
+#Bilateral Blur<br>
+bilateral=cv2.bilateralFilter(image,9,75,75)<br>
+cv2.imshow('Bilateral Blurring',bilateral)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/176425935-a0d040a6-c482-4603-a974-126837ad5b5e.png)
@@ -319,25 +319,25 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/176426090-80765078-8b2d-4dfd-ac98-7d99ac345000.png)
 ![image](https://user-images.githubusercontent.com/97939284/176426151-957f20d2-6178-4d05-991b-60ac8fc17843.png)
 
-from PIL import Image
-from PIL import ImageEnhance
-image=Image.open('19.jpg')
-image.show()
-enh_bri=ImageEnhance.Brightness(image)
-brightness=1.5
-image_brightened=enh_bri.enhance(brightness)
-image_brightened.show()
-enh_col=ImageEnhance.Color(image)
-color=1.5
-image_colored=enh_col.enhance(color)
-image_colored.show()
-enh_con=ImageEnhance.Contrast(image)
-contrast=1.5
-image_contrasted=enh_con.enhance(contrast)
-image_contrasted.show()
-enh_sha=ImageEnhance.Sharpness(image)
-sharpness=3.0
-image_sharped=enh_sha.enhance(sharpness)
-image_sharped.show()
+from PIL import Image<br>
+from PIL import ImageEnhance<br>
+image=Image.open('19.jpg')<br>
+image.show()<br>
+enh_bri=ImageEnhance.Brightness(image)<br>
+brightness=1.5<br>
+image_brightened=enh_bri.enhance(brightness)<br>
+image_brightened.show()<br>
+enh_col=ImageEnhance.Color(image)<br>
+color=1.5<br>
+image_colored=enh_col.enhance(color)<br>
+image_colored.show()<br>
+enh_con=ImageEnhance.Contrast(image)<br>
+contrast=1.5<br>
+image_contrasted=enh_con.enhance(contrast)<br>
+image_contrasted.show()<br>
+enh_sha=ImageEnhance.Sharpness(imag<br>)<br>
+sharpness=3.0<br>
+image_sharped=enh_sha.enhance(sharpness)<br>
+image_sharped.show()<br>
 
 
