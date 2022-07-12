@@ -92,12 +92,12 @@ print("Height:",image.height)<br>
 image.close()<br>
 
 OUTPUT:<br>
-Filename: 18.jpg
-Format: JPEG
-Mode: RGB
-size: (564, 1004)
-Width: 564
-Height: 1004
+Filename: 18.jpg<br>
+Format: JPEG<br>
+Mode: RGB<br>
+size: (564, 1004)<br>
+Width: 564<br>
+Height: 1004<br>
 
 # Program 8: Convert original image to gray scale and then binary
 import cv2<br><br>
