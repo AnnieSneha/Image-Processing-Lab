@@ -77,6 +77,25 @@ OUTPUT:<br>
 
 # Program 7:Write a program to display the image attributes<br>
 
+from PIL import Image
+image=Image.open('18.jpg')
+print("Filename:",image.filename)
+print("Format:",image.format)
+print("Mode:",image.mode)
+print("size:",image.size)
+print("Width:",image.width)
+print("Height:",image.height)
+image.close()
+
+OUTPUT:<br>
+Filename: 18.jpg
+Format: JPEG
+Mode: RGB
+size: (564, 1004)
+Width: 564
+Height: 1004
+
+# Program 8: Convert original image to gray scale and then binary
 import cv2<br><br>
 #read the image file<br>
 img=cv2.imread('b2.jpg')<br>
@@ -97,7 +116,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175278786-0595d26f-eb31-4ea0-9381-6891c9e5228b.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/175278901-a86de8c1-2293-4c1c-8cfc-c4bbdd39d134.png)<br>
 
-# Program 9:
+# Program 9:Resize the original image
 
 import cv2
 img=cv2.imread('b4.jpg')
@@ -181,7 +200,7 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97939284/175022486-66bbc556-701b-4919-a3f5-f046379189e8.png)
 
-# Program 12: Write a program to perform arith,atic operation on image
+# Program 12: Write a program to perform arithmatic operation on image
 
 import cv2<br>
 import matplotlib.image as mpimg<br>
@@ -263,7 +282,7 @@ c.waitKey(0)<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175276384-61662c7b-8a30-4104-b4ad-327a1a03b6e0.png)
 
-# Program 15:De
+# Program 15:Bitwise operation
 
 import cv2<br>
 import matplotlib.pyplot as plt<br>
@@ -291,7 +310,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/176425095-2fb817b6-272c-4aab-9d45-15b9c8a4607d.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/176425327-3aa83223-2f3b-47b2-889c-2cbf9b42f162.png)
 
-# Program 1
+# Program 16:Blurring
 
 #importing libraries<br>
 import cv2<br>
@@ -319,6 +338,8 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/176426090-80765078-8b2d-4dfd-ac98-7d99ac345000.png)
 ![image](https://user-images.githubusercontent.com/97939284/176426151-957f20d2-6178-4d05-991b-60ac8fc17843.png)
 
+# Program 17:Image Enhancement
+
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
 image=Image.open('19.jpg')<br>
@@ -345,6 +366,10 @@ image_sharped.show()<br>
 ![image](https://user-images.githubusercontent.com/97939284/178441353-6fc39b70-449f-44ff-970a-0754d48a9eb7.png)
 ![image](https://user-images.githubusercontent.com/97939284/178441438-47e73cfd-8217-4a84-9544-f76160528a11.png)
 ![image](https://user-images.githubusercontent.com/97939284/178441521-12a4f349-13dc-468d-b68c-beb623456a33.png)
+
+#Program 18:morphological operation
+
+
 
 
 
