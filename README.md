@@ -64,17 +64,20 @@ OUTPUT:<br>
 import cv2<br>
 import matplotlib.pyplot as plt<br>
 import numpy as np<br>
-img=cv2.imread('b2.jpg')<br>
+img=cv2.imread('01.jpg')<br>
 plt.imshow(img)<br>
 plt.show()<br>
 img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)<br>
+plt.imshow(img)<br>
+plt.show()<br>
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
+plt.imshow(img)<br>
 plt.show()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97939284/173814290-0aca2040-dcff-4ad5-8661-82f8265e52a7.png)<br>
-![image](https://user-images.githubusercontent.com/97939284/173814439-9890ea4d-504b-4b0f-b1d5-24dbe52f9b18.png)<br>
-![image](https://user-images.githubusercontent.com/97939284/173814560-3c54a329-6356-4a2d-884c-c6231bc1ac76.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/178466981-5f93c893-e6e2-4e74-b20b-f832c3962fc6.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/178467063-f92ad28d-4ca7-4d86-9c80-af519243386d.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/178467093-fd13ec3f-526a-4b94-8615-10eaf0898406.png)<br>
 
 # Program 7:Write a program to display the image attributes<br>
 
