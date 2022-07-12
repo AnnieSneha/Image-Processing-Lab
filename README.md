@@ -70,6 +70,7 @@ plt.show()<br>
 img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)<br>
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
 plt.show()<br>
+
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/173814290-0aca2040-dcff-4ad5-8661-82f8265e52a7.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/173814439-9890ea4d-504b-4b0f-b1d5-24dbe52f9b18.png)<br>
@@ -77,15 +78,15 @@ OUTPUT:<br>
 
 # Program 7:Write a program to display the image attributes<br>
 
-from PIL import Image
-image=Image.open('18.jpg')
-print("Filename:",image.filename)
-print("Format:",image.format)
-print("Mode:",image.mode)
-print("size:",image.size)
-print("Width:",image.width)
-print("Height:",image.height)
-image.close()
+from PIL import Image<br>
+image=Image.open('18.jpg')<br>
+print("Filename:",image.filename)<br>
+print("Format:",image.format)<br>
+print("Mode:",image.mode)<br>
+print("size:",image.size)<br>
+print("Width:",image.width)<br>
+print("Height:",image.height)<br>
+image.close()<br>
 
 OUTPUT:<br>
 Filename: 18.jpg
@@ -282,7 +283,7 @@ c.waitKey(0)<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/175276384-61662c7b-8a30-4104-b4ad-327a1a03b6e0.png)
 
-# Program 15:Bitwise operation
+# Program 15:Write a program using Bitwise operation
 
 import cv2<br>
 import matplotlib.pyplot as plt<br>
@@ -310,7 +311,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/176425095-2fb817b6-272c-4aab-9d45-15b9c8a4607d.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/176425327-3aa83223-2f3b-47b2-889c-2cbf9b42f162.png)
 
-# Program 16:Blurring
+# Program 16:Develop a program using Blurring operation
 
 #importing libraries<br>
 import cv2<br>
@@ -338,7 +339,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/176426090-80765078-8b2d-4dfd-ac98-7d99ac345000.png)
 ![image](https://user-images.githubusercontent.com/97939284/176426151-957f20d2-6178-4d05-991b-60ac8fc17843.png)
 
-# Program 17:Image Enhancement
+# Program 17:Develop a program using Image Enhancement
 
 from PIL import Image<br>
 from PIL import ImageEnhance<br>
@@ -361,15 +362,40 @@ sharpness=3.0<br>
 image_sharped=enh_sha.enhance(sharpness)<br>
 image_sharped.show()<br>
  
+OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178441194-0a568592-6331-4b3a-8ed6-51ae0d5e9fbb.png)
 ![image](https://user-images.githubusercontent.com/97939284/178441265-f402310b-89de-4d9e-907f-cfb41c2cbbe5.png)
 ![image](https://user-images.githubusercontent.com/97939284/178441353-6fc39b70-449f-44ff-970a-0754d48a9eb7.png)
 ![image](https://user-images.githubusercontent.com/97939284/178441438-47e73cfd-8217-4a84-9544-f76160528a11.png)
 ![image](https://user-images.githubusercontent.com/97939284/178441521-12a4f349-13dc-468d-b68c-beb623456a33.png)
 
-#Program 18:morphological operation
+#Program 18:Devlop a program using Morphological Operation
 
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+from PIL import Image,ImageEnhance<br>
+img=cv2.imread('18.jpg',0)<br>
+ax=plt.subplots(figsize=(20,10))<br>
+kernel=np.ones((5,5),np.uint8)<br>
+opening=cv2.morphologyEx(img,cv2.MORPH_OPEN,kernel)<br>
+closing=cv2.morphologyEx(img,cv2.MORPH_CLOSE,kernel)<br>
+erosion=cv2.erode(img,kernel,iterations=1)<br>
+dilation=cv2.dilate(img,kernel,iterations=1)<br>
+gradient=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,kernel)<br>
+plt.subplot(151)<br>
+plt.imshow(opening)<br>
+plt.subplot(152)<br>
+plt.imshow(closing)<br>
+plt.subplot(153)<br>
+plt.imshow(erosion)<br>
+plt.subplot(154)<br>
+plt.imshow(dilation)<br>
+plt.subplot(155)<br>
+plt.imshow(gradient)<br>
+cv2.waitKey(0)<br>
 
-
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178465499-030463ff-990a-499f-a010-9f1eadcb418e.png)
 
 
