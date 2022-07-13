@@ -372,7 +372,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178441438-47e73cfd-8217-4a84-9544-f76160528a11.png)
 ![image](https://user-images.githubusercontent.com/97939284/178441521-12a4f349-13dc-468d-b68c-beb623456a33.png)
 
-#Program 18:Devlop a program using Morphological Operation
+# Program 18:Devlop a program using Morphological Operation
 
 import cv2<br>
 import numpy as np<br>
