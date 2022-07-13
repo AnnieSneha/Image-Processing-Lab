@@ -100,7 +100,7 @@ Width: 564<br>
 Height: 1004<br>
 
 # Program 8: Convert original image to gray scale and then binary
-import cv2<br><br>
+import cv2<br>
 #read the image file<br>
 img=cv2.imread('b2.jpg')<br>
 cv2.imshow("RGB",img)<br>
