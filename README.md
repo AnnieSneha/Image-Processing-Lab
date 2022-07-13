@@ -408,16 +408,16 @@ OriginalImg=cv2.imread('21.jpg')<br>
 GrayImg=cv2.imread('21.jpg',0)<br>
 isSaved=cv2.imwrite('‪E:/21.jpg',GrayImg)<br>
 cv2.imshow("Display Original Image",OriginalImg)<br>
-cv2.imshow("Display Grayscale Iamge",GrayImg)<br>
+cv2.imshow("Display Grayscale Image",GrayImg)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 if isSaved:<br>
     print("The image is successfully saved")<br>
-
+   
 OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178717011-e082c3d6-35fd-48f1-b722-46a2bef27e26.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/178702666-e1b3e0c7-febc-4ea2-aa28-56d89c800593.png)
-![image](https://user-images.githubusercontent.com/97939284/178702941-46fedb0a-4750-4fdd-8a7a-9f8d48ae814a.png)
-
+![image](https://user-images.githubusercontent.com/97939284/178717109-626afbc9-d80b-447d-ad8b-5093636e16c6.png)
 
 # Program 20: Write a program to perform slicing with background<br>
 
