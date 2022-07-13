@@ -441,6 +441,24 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178706366-f113450f-736d-464a-ae80-1e8a166f2dde.png)
 
-                               
+# Program 20: Write a program to perform slicing without background<br>                               
 
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('21.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<150):<br>
+            z[i][j]=255<br>
+        else:<br>
+            z[i][j]=0<br>
+equ=np.hstack((image,z))<br>
+plt.title("graylevel slicing with background")<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
 
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178710646-c7ea6191-6dbd-4597-9fcf-e788b6852c56.png)
