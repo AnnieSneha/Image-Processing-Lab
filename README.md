@@ -456,9 +456,9 @@ for i in range(0,x):<br>
         else:<br>
             z[i][j]=0<br>
 equ=np.hstack((image,z))<br>
-plt.title("graylevel slicing with background")<br>
+plt.title("graylevel slicing without background")<br>
 plt.imshow(equ,'gray')<br>
 plt.show()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97939284/178710646-c7ea6191-6dbd-4597-9fcf-e788b6852c56.png)
+![image](https://user-images.githubusercontent.com/97939284/178711059-a76f1541-9627-4c83-8473-7807388d6df3.png)
