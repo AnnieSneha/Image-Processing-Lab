@@ -401,4 +401,13 @@ cv2.waitKey(0)<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178465499-030463ff-990a-499f-a010-9f1eadcb418e.png)
 
+# Program 19: Develop a program 1)Read the image 2) Write(save) the grayscale 3)Display the original image and grayscale
+
+OUTPUT:<br>
+
+# Program 20: Write a program to perform slicing with background
+
+
+                               
+
 
