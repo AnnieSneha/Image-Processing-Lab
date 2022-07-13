@@ -417,7 +417,9 @@ if isSaved:<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178717011-e082c3d6-35fd-48f1-b722-46a2bef27e26.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/178702666-e1b3e0c7-febc-4ea2-aa28-56d89c800593.png)
-![image](https://user-images.githubusercontent.com/97939284/178717109-626afbc9-d80b-447d-ad8b-5093636e16c6.png)
+![image](https://user-images.githubusercontent.com/97939284/178717109-626afbc9-d80b-447d-ad8b-5093636e16c6.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/178717800-a64236d9-140f-4c0d-af28-565e3f187382.png)
+
 
 # Program 20: Write a program to perform slicing with background<br>
 
