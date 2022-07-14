@@ -518,13 +518,13 @@ plt.show()<br><br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178960778-1c19d188-6c5a-42bc-b2ca-6740cf0eb206.png)<br><br>
 
-5)<br><br>
-import cv2  <br><br>
-from matplotlib import pyplot as plt <br><br> 
-img = cv2.imread('19.jpg',0) <br><br>
-histr = cv2.calcHist([img],[0],None,[256],[0,256])<br><br> 
-plt.plot(histr) <br><br>
-plt.show()<br><br>
+5)<br>
+import cv2  <br>
+from matplotlib import pyplot as plt <br>
+img = cv2.imread('19.jpg',0) <br>
+histr = cv2.calcHist([img],[0],None,[256],[0,256])<br>
+plt.plot(histr) <br>
+plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178960881-74b31062-fb65-4f17-9316-f3ae831e8965.png)
