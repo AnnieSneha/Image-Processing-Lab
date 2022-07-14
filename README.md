@@ -508,22 +508,22 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178960716-3363ad10-a358-4084-9179-9fcf982c28e0.png)
 
 4)<br><br>
-import cv2<br><br>
-import numpy as np<br><br>
-img  = cv2.imread('23.jpg',0)<br><br>
-hist = cv2.calcHist([img],[0],None,[256],[0,256])<br><br>
-plt.hist(img.ravel(),256,[0,256])<br><br>
-plt.show()<br><br>
+import cv2<br>
+import numpy as np<br>
+img  = cv2.imread('23.jpg',0)<br
+hist = cv2.calcHist([img],[0],None,[256],[0,256])<br>
+plt.hist(img.ravel(),256,[0,256])<br>
+plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178960778-1c19d188-6c5a-42bc-b2ca-6740cf0eb206.png)<br><br>
 
 5)<br>
-import cv2  <br>
-from matplotlib import pyplot as plt <br>
-img = cv2.imread('19.jpg',0) <br>
+import cv2<br>
+from matplotlib import pyplot as plt<br>
+img = cv2.imread('19.jpg',0)<br>
 histr = cv2.calcHist([img],[0],None,[256],[0,256])<br>
-plt.plot(histr) <br>
+plt.plot(histr)<br>
 plt.show()<br>
 
 OUTPUT:<br>
