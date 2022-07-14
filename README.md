@@ -466,7 +466,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178711059-a76f1541-9627-4c83-8473-7807388d6df3.png)
 
 # HISTOGRAM
-1)<br>
+1)
 from skimage import io<br>
 import matplotlib.pyplot as plt<br>
 image = io.imread('20.jpg')<br>
@@ -478,7 +478,7 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178960550-41973ca5-ca1c-4aac-8edf-d68b221fc51a.png)
 
-2)<br>
+2)
 import numpy as np<br>
 import cv2 as cv<br>
 from matplotlib import pyplot as plt<br>
@@ -507,7 +507,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178960706-4d352ea4-4254-444d-8809-475a3ae5f6ca.png)<br><br>
 ![image](https://user-images.githubusercontent.com/97939284/178960716-3363ad10-a358-4084-9179-9fcf982c28e0.png)
 
-4)<br><br>
+4)
 import cv2<br>
 import numpy as np<br>
 img  = cv2.imread('23.jpg',0)<br
@@ -518,7 +518,7 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178960778-1c19d188-6c5a-42bc-b2ca-6740cf0eb206.png)<br><br>
 
-5)<br>
+5)
 import cv2<br>
 from matplotlib import pyplot as plt<br>
 img = cv2.imread('19.jpg',0)<br>
