@@ -443,7 +443,7 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178706366-f113450f-736d-464a-ae80-1e8a166f2dde.png)
 
-# Program 20: Write a program to perform slicing without background<br>                               
+# Program 21: Write a program to perform slicing without background<br>                               
 
 import cv2<br>
 import numpy as np<br>
@@ -464,3 +464,101 @@ plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178711059-a76f1541-9627-4c83-8473-7807388d6df3.png)
+
+# HISTOGRAM
+1)
+from skimage import io
+import matplotlib.pyplot as plt
+image = io.imread('20.jpg')
+ax = plt.hist(image.ravel(), bins = 256)
+_ = plt.xlabel('Intensity Value')
+_ = plt.ylabel('Count') 
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178960550-41973ca5-ca1c-4aac-8edf-d68b221fc51a.png)
+
+2)
+import numpy as np
+import cv2 as cv
+from matplotlib import pyplot as plt
+img = cv.imread('20.jpg')
+plt.imshow(img)
+plt.show()
+img = cv.imread('20.jpg',0)
+plt.hist(img.ravel(),256,[0,256]);
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178960592-cdb5b2fe-9ef6-4647-aff4-bf47c6f6733f.png)
+![image](https://user-images.githubusercontent.com/97939284/178960639-d553cb8a-437f-4c2d-bf77-dc8932fc4055.png)
+
+3)
+from skimage import io
+import matplotlib.pyplot as plt
+img = io.imread('19.jpg')
+plt.imshow(img)
+plt.show()
+image = io.imread('19.jpg')
+ax = plt.hist(image.ravel(), bins = 256)
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178960706-4d352ea4-4254-444d-8809-475a3ae5f6ca.png)
+![image](https://user-images.githubusercontent.com/97939284/178960716-3363ad10-a358-4084-9179-9fcf982c28e0.png)
+
+4)
+import cv2
+import numpy as np
+img  = cv2.imread('23.jpg',0)
+hist = cv2.calcHist([img],[0],None,[256],[0,256])
+plt.hist(img.ravel(),256,[0,256])
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178960778-1c19d188-6c5a-42bc-b2ca-6740cf0eb206.png)
+
+5)
+import cv2  
+from matplotlib import pyplot as plt  
+img = cv2.imread('19.jpg',0) 
+histr = cv2.calcHist([img],[0],None,[256],[0,256]) 
+plt.plot(histr) 
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178960881-74b31062-fb65-4f17-9316-f3ae831e8965.png)
+
+6)
+from skimage import io
+import matplotlib.pyplot as plt
+image = io.imread('13.jpg')
+_ = plt.hist(image.ravel(), bins = 256, color = 'orange', )
+_ = plt.hist(image[:, :, 0].ravel(), bins = 256, color = 'red', alpha = 0.5)
+_ = plt.hist(image[:, :, 1].ravel(), bins = 256, color = 'Green', alpha = 0.5)
+_ = plt.hist(image[:, :, 2].ravel(), bins = 256, color = 'Blue', alpha = 0.5)
+_ = plt.xlabel('Intensity Value')
+_ = plt.ylabel('Count')
+_ = plt.legend(['Total', 'Red_Channel', 'Green_Channel', 'Blue_Channel'])
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178960964-8e20ba58-4f19-4e33-96b8-a23ebee9770c.png)
+
+7)
+from matplotlib import pyplot as plt
+import numpy as np
+fig,ax = plt.subplots(1,1)
+a = np.array([22,87,5,43,56,73,55,54,11,20,51,5,79,31,27])
+ax.hist(a, bins = [0,25,50,75,100])
+ax.set_title("histogram of result")
+ax.set_xticks([0,25,50,75,100])
+ax.set_xlabel('marks')
+ax.set_ylabel('no. of students')
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/178962442-17db314a-eae8-4cd3-a2d9-0c2863d729ea.png)
+
+
+
