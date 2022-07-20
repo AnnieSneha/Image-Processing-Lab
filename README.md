@@ -465,6 +465,65 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178711059-a76f1541-9627-4c83-8473-7807388d6df3.png)
 
+# Program 22: Program to perform basic image data analysis using intensity transformation:
+# a)Image negative
+# b)Log transformation
+# c)Gamma correction
+
+%matplotlib inline<br>
+import imageio<br>
+import matplotlib.pyplot as plt<br>
+import warnings<br>
+import matplotlib.cbook<br>
+warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)<br>
+pic=imageio.imread("23.jpg")<br>
+plt.figure(figsize=(6,6))<br>
+plt.imshow(pic);<br>
+plt.axis('off');<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/179964078-2b09f34b-e73a-496b-bffd-32bc226a5391.png)
+
+negative=255- pic # neg= (L-1) -img<br>
+plt.figure(figsize=(6,6))<br>
+plt.imshow(negative);<br>
+plt.axis('off');<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/179964534-1503bf5d-2d8b-487d-beaf-abc0e1953688.png)
+
+%matplotlib inline<br>
+import imageio<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+pic=imageio.imread('23.jpg')<br>
+gray=lambda rgb : np.dot(rgb[...,:3],[0.299,0.587,0.114])<br>
+gray=gray(pic)<br>
+max_=np.max(gray)<br>
+def log_transform():<br>
+    return(255/np.log(1+max_))*np.log(1+gray)<br>
+plt.figure(figsize=(5,5))<br>
+plt.imshow(log_transform(),cmap=plt.get_cmap(name='gray'))<br>
+plt.axis('off');<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/179966423-a1c174d2-0cb2-4e81-831e-b9dfd64a044d.png)
+
+import imageio<br> 
+import matplotlib.pyplot as plt<br>
+
+#Gamma encoding<br>
+pic=imageio.imread('23.jpg')<br>
+gamma=2.2 # Gamma < 1 ~ Dark ; Gamma > 1 ~ Bright<br>
+
+gamma_correction=((pic/255)**(1/gamma))<br>
+plt.figure(figsize=(5,5))<br>
+plt.imshow(gamma_correction)<br>
+plt.axis('off');<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/179966531-a4a97498-f0c8-4a68-b96f-f5de17aa6318.png)
+
 # HISTOGRAM
 1)
 from skimage import io<br>
