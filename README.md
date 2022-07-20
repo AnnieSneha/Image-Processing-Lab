@@ -466,9 +466,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/178711059-a76f1541-9627-4c83-8473-7807388d6df3.png)
 
 # Program 22: Program to perform basic image data analysis using intensity transformation:
-# a)Image negative
-# b)Log transformation
-# c)Gamma correction
+# a)Image negative b)Log transformation c)Gamma correction
 
 %matplotlib inline<br>
 import imageio<br>
@@ -523,6 +521,64 @@ plt.axis('off');<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/179966531-a4a97498-f0c8-4a68-b96f-f5de17aa6318.png)
+
+# Program 23: Program to perform basic image manipulation:
+# a)Sharpness b)Flipping c)Cropping
+
+#Image sharpen<br>
+from PIL import Image<br>
+from PIL import ImageFilter<br>
+import matplotlib.pyplot as plt<br>
+#Load the image<br>
+my_image=Image.open('25.jpg')<br>
+#Use sharpen function<br>
+sharp=my_image.filter(ImageFilter.SHARPEN)<br>
+#Save the image<br>
+sharp.save("D:/image_sharpen.jpg")<br>
+sharp.show()<br>
+plt.imshow(sharp)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/179967761-8e55d59d-9077-4239-adc3-ced612e6a49a.png)
+
+#Image flip<br>
+import matplotlib.pyplot as plt<br>
+#Load the image<br>
+img=Image.open('25.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+
+#use the flip function<br>
+flip=img.transpose(Image.FLIP_LEFT_RIGHT)<br>
+
+#save the image<br>
+flip.save('D:/image_flip.jpg')<br>
+plt.imshow(flip)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/179968055-4eaedf24-50b4-4106-a09e-8d753e7a2efd.png)<br>
+![image](https://user-images.githubusercontent.com/97939284/179968087-ef89ae66-cd98-4cf4-9b05-66749ffa5c49.png)<br>
+
+#Importing Image class from PIL module<br>
+from PIL import Image<br>
+import matplotlib.pyplot as plt<br>
+#Opens a image in RGB mode<br>
+im=Image.open('25.jpg')<br>
+#Size of the image in pixels (size of original image)<br>
+#(This is not mandatory)<br>
+width,height=im.size<br>
+#Crapped image of above dimension<br>
+#(It will not change original image)<br>
+im1=im.crop((250,200,1000,1000))<br>
+#Shows the image in image viewer<br>
+im1.show()<br>
+plt.imshow(im1)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/179968142-a50a64bb-5f38-4293-89d5-1f11d400ad83.png)
 
 # HISTOGRAM
 1)
