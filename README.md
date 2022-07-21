@@ -522,8 +522,7 @@ plt.axis('off');<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/179966531-a4a97498-f0c8-4a68-b96f-f5de17aa6318.png)
 
-# Program 23: Program to perform basic image manipulation:
-# a)Sharpness b)Flipping c)Cropping
+# Program 23: Program to perform basic image manipulation: a)Sharpness b)Flipping c)Cropping
 
 #Image sharpen<br>
 from PIL import Image<br>
