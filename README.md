@@ -53,11 +53,11 @@ OUTPUT:<br>
 # Program 5:Develop a program to create image using colors<br>
 
 from PIL import Image<br>
-img=Image.new("RGB",(200,400),(0, 0, 255))<br>
+img=Image.new("RGB",(200,200),(230,230,250))<br>
 img.show()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97939284/173813696-f552419d-9b39-4595-bf01-92f689afc915.png)
+![image](https://user-images.githubusercontent.com/97939284/180189637-7513cd5a-b4d5-4250-a12d-4cb4a6514ea2.png)
 
 # Program 6:Develop a program to visualise the image using various color spaces
 
