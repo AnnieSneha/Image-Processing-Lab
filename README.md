@@ -680,19 +680,18 @@ OUTPUT:<br>
 
 from PIL import Image
   
-# Create an image as input:
+#Create an image as input:
 input_image = Image.new(mode="RGB", size=(400, 400),
                         color="blue")
   
-# save the image as "input.png"
+#save the image as "input.png"
 #(not mandatory)
 #input_image.save("input", format="png")
   
-# Extracting pixel map:
+#Extracting pixel map:
 pixel_map = input_image.load()
   
-# Extracting the width and height
-# of the image:
+#Extracting the width and height of the image:
 width, height = input_image.size
 z = 100
 for i in range(width):
@@ -712,18 +711,17 @@ for i in range(width):
             # RGB value of light salmon.
             pixel_map[i, j] = (255, 160, 122)
   
-# The following loop will create a cross
-# of color blue.
+#The following loop will create a cross of color blue.
 for i in range(width):
     
     # RGB value of Blue.
     pixel_map[i, i] = (0, 0, 255)
     pixel_map[i, width-i-1] = (0, 0, 255)
   
-# Saving the final output
-# as "output.png":
+#Saving the final output
+#as "output.png":
 #input_image.save("output", format="png")
 plt.imshow(input_image)
 plt.show()  
-# use input_image.show() to see the image on the
-# output screen.
+#use input_image.show() to see the image on the
+#output screen.
