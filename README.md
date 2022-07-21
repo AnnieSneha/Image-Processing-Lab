@@ -18,7 +18,7 @@ OUTPUT:<br>
  plt.imshow(img)<br>
  
  OUTPUT:<br>
- ![image](https://user-images.githubusercontent.com/97939284/173809538-19372b96-f0f6-49f8-bc2a-f60dd9ae31af.png) 
+ ![image](https://user-images.githubusercontent.com/97939284/180187742-7230d784-715f-4a32-ba38-318c395ea42a.png)
  
 # Program 3:Develop a program to perform linear transformation 
 
