@@ -1,0 +1,217 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Constantia;}{\f1\fnil Constantia;}{\f2\fnil\fcharset2 Wingdings;}{\f3\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\sl276\slmult1\ul\b\f0\fs24\lang9 What is Image Processing?\fs28\par
+\ulnone\b0\fs22 Digital Image Processing means processing digital image by means of a digital computer. We can also say that it is a use of computer algorithms, in order to get enhanced image either to extract some useful information. \par
+\par
+\i OR\i0  \b\fs24 What is Digital Image Processing (DIP)?\ul\par
+\ulnone\b0\fs22 Digital Image Processing (DIP) is a software which is used to manipulate the digital images by the use of computer system. It is also used to enhance the images, to get some important information from it.\par
+
+\pard\sa200\sl276\slmult1\b\fs24 Image processing mainly include the following steps:\par
+
+\pard\sl276\slmult1\b0\fs22 1.Importing the image via image acquisition tools; \par
+2.Analysing and manipulating the image; \par
+3.Output in which result can be altered image or a report which is based on analysing that image.\par
+\par
+\b Digital Image Processing allows users the following tasks:\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1\ul Image sharpening and restoration\ulnone\b0 : The common applications of Image sharpening and restoration are zooming, blurring, sharpening, grayscale conversion, edges detecting, Image recognition, and Image retrieval, etc.\par
+{\pntext\f3\'B7\tab}\ul\b Medical field:\ulnone\b0  The common applications of medical field are Gamma-ray imaging, PET scan, X-Ray Imaging, Medical CT, UV imaging, etc.\par
+{\pntext\f3\'B7\tab}\ul\b Remote sensing: \ulnone\b0 It is the process of scanning the earth by the use of satellite and acknowledges all activities of space.\par
+{\pntext\f3\'B7\tab}\ul\b Machine/Robot vision: \ulnone\b0 It works on the vision of robots so that they can see things, identify them, etc.\par
+
+\pard\sl276\slmult1\par
+
+\pard\ri-990\sl276\slmult1\tx9270\b\fs24 What is an image?\par
+
+\pard\ri-990\sa200\sl276\slmult1\tx9270\b0\fs22 An image is defined as a two-dimensional function,F(x,y), where x and y are spatial coordinates, and the amplitude of F at any pair of coordinates (x,y) is called the intensity of that image at that point. When x,y, and amplitude values of F are finite, we call it a digital image. \par
+
+\pard\sl276\slmult1\b\fs24 Types of an image\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1\ul\fs22 BINARY IMAGE\ulnone\b0\f1\endash\f0  The binary image as its name suggests, contain only two pixel elements i.e 0 & 1,where 0 refers to black and 1 refers to white. This image is also known as Monochrome.\par
+{\pntext\f3\'B7\tab}\ul\b BLACK AND WHITE IMAGE\ulnone\b0\f1\endash\f0  The image which consist of only black and white color is called BLACK AND WHITE IMAGE.\par
+{\pntext\f3\'B7\tab}\ul\b 8 bit COLOR FORMAT\ulnone\f1\endash\f0  \b0 It is the most famous image format.It has 256 different shades of colors in it and commonly known as Grayscale Image. In this format, 0 stands for Black, and 255 stands for white, and 127 stands for gray.\par
+{\pntext\f3\'B7\tab}\ul\b 16 bit COLOR FORMAT\ulnone\b0\f1\endash\f0  It is a color image format. It has 65,536 different colors in it.It is also known as High Color Format. In this format the distribution of color is not as same as Grayscale image.\par
+
+\pard\sl276\slmult1\b A 16 bit format is actually divided into three further formats which are Red, Green and Blue. That famous RGB format. \b0\par
+\b\par
+Image as a Matrix\par
+\b0 As we know, images are represented in rows and columns we have the following syntax in which images are represented: \par
+The right side of this equation is digital image by definition. Every element of this matrix is called image element , picture element , or pixel. \par
+\par
+\b DIGITAL IMAGE REPRESENTATION IN MATLAB:\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl240\slmult1\b0  In MATLAB the start index is from 1 instead of 0. Therefore, f(1,1) = f(0,0). \par
+
+\pard\sl240\slmult1 henceforth the two representation of image are identical, except for the shift in origin. \par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl240\slmult1 In MATLAB, matrices are stored in a variable i.e X,x,input_image , and so on. The variables must be a letter as same as other programming languages. \par
+
+\pard\sl240\slmult1\b\fs24\par
+
+\pard\sl276\slmult1\ul\fs22 PHASES OF IMAGE PROCESSING:\par
+\ulnone 1\ul .ACQUISITION\ulnone\b0\f1\endash\f0  It could be as simple as being given an image which is in digital form. The main work involves: \par
+a) Scaling \par
+b) Color conversion(RGB to Gray or vice-versa) \par
+
+\pard\sl276\slmult1\qj\b 2.\ul IMAGE ENHANCEMENT\b0\f1\endash\f0  \ulnone It is amongst the simplest and most appealing in areas of Image Processing it is also used to extract some hidden details from an image and is subjective. \par
+
+\pard\sl276\slmult1\b 3.\ul IMAGE RESTORATION\ulnone\f1\endash\f0  \b0 It also deals with appealing of an image but it is objective(Restoration is based on mathematical or probabilistic model or image degradation). \par
+\b 4.\ul COLOR IMAGE PROCESSING\ulnone\b0\f1\endash\f0  It deals with pseudocolor and full color image processing color models are applicable to digital image processing. \par
+\ul\b 5.WAVELETS AND MULTI-RESOLUTION PROCESSING\ulnone\b0\f1\endash\f0  It is foundation of representing images in various degrees. \par
+\ul\b 6.IMAGE COMPRESSION\ulnone\b0 -It involves in developing some functions to perform this operation. It mainly deals with image size or resolution. \par
+\ul\b 7.MORPHOLOGICAL PROCESSING\ulnone\b0 -It deals with tools for extracting image components that are useful in the representation & description of shape. \par
+\b 8.\ul SEGMENTATION PROCEDURE\ulnone -\b0 It includes partitioning an image into its constituent parts or objects. Autonomous segmentation is the most difficult task in Image Processing. \par
+\b 9.\ul REPRESENTATION & DESCRIPTION\ulnone -\b0 It follows output of segmentation stage, choosing a representation is only the part of solution for transforming raw data into processed data. \par
+\b 10.\ul OBJECT DETECTION AND RECOGNITION\ulnone\b0 -It is a process that assigns a label to an object based on its descriptor. \par
+\par
+\b\fs24 Characteristics of Digital Image Processing\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1\b0\fs22 It uses software, and some are free of cost.\par
+{\pntext\f3\'B7\tab}It provides clear images.\par
+{\pntext\f3\'B7\tab}Digital Image Processing do image enhancement to recollect the data through images.\par
+{\pntext\f3\'B7\tab}It is used widely everywhere in many fields.\par
+{\pntext\f3\'B7\tab}It reduces the complexity of digital image processing.\par
+{\pntext\f3\'B7\tab}It is used to support a better experience of life.\par
+
+\pard\sl276\slmult1\b\fs24 Advantages of Digital Image Processing\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1\b0\fs22 Image reconstruction (CT, MRI, SPECT, PET)\par
+{\pntext\f3\'B7\tab}Image reformatting (Multi-plane, multi-view reconstructions)\par
+{\pntext\f3\'B7\tab}Fast image storage and retrieval\par
+{\pntext\f3\'B7\tab}Fast and high-quality image distribution.\par
+{\pntext\f3\'B7\tab}Controlled viewing (windowing, zooming)\par
+
+\pard\sl276\slmult1\b\fs24 Disadvantages of Digital Image Processing\b0\fs22\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1 It is very much time-consuming.\par
+{\pntext\f3\'B7\tab}It is very much costly depending on the particular system.\par
+{\pntext\f3\'B7\tab}Qualified persons can be used.\par
+
+\pard\sl276\slmult1\b\par
+\ul\fs28 Image Preprocessing \par
+\ulnone\b0\fs22 Image Preprocessing are the steps we take to convert a raw image into an enhanced form that the model is ready to use for training and inference. The images collected for any computer vision tasks may be of different sizes, contrast, orientation.\par
+\par
+Image preprocessing techniques are:\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1 Grayscale conversion\par
+{\pntext\f3\'B7\tab}Normalisation\par
+{\pntext\f3\'B7\tab}Data Augmentation\par
+{\pntext\f3\'B7\tab}Image standardization\par
+
+\pard\sl276\slmult1\par
+\b Grayscale conversion\b0\par
+Grayscale is simply converting images from colored to black and white. It is normally used to reduce computation complexity in machine learning algorithms.\par
+Since most pictures don\rquote t need color to be recognized, it is wise to use grayscale, which reduces the number of pixels in an image, thus, reducing the computations required.\par
+
+\pard\sl240\slmult1\par
+
+\pard\sl276\slmult1 Execute the code below to convert the original image to grayscale:\par
+
+\pard\sl276\slmult1 gray_image = skimage.color.rgb2gray(image)\par
+plt.imshow(gray_image, cmap = 'gray')\par
+
+\pard\sl240\slmult1\par
+
+\pard\sl276\slmult1 A few examples to use grayscale include: traffic lights, healthcare diagnosis, autonomous vehicles, agriculture, etc. \par
+
+\pard\sl240\slmult1\par
+
+\pard\sl276\slmult1\b Normalization\b0\par
+Also referred to as data re-scaling, it is the process of projecting image data pixels (intensity) to a predefined range (usually (0,1) or (-1, 1)). This is commonly used on different data formats, and you want to normalize all of them to apply the same algorithms over them.\par
+Normalization is usually applied to convert an image\rquote s pixel values to a typical or more familiar sense.\par
+
+\pard\sl240\slmult1\par
+
+\pard\sl276\slmult1\ul Its benefits include:\ulnone\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1\ul Fairness across all images \ulnone - For example, scaling all images to an equal range of [0,1] or [-1,1] allows all images to contribute equally to the total loss rather than when other images have high and low pixels ranges give strong and weak loss, respectively.\par
+
+\pard\sl240\slmult1\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1\ul Provides a standard learning rate \ulnone - Since high pixel images require a low learning rate and low pixel images high learning rate, re-scaling helps provide a standard learning rate for all images.\par
+
+\pard\sl276\slmult1\par
+\b Let\rquote s write the code below to normalize our data.\par
+\b0 norm_image = (gray_image - np.min(gray_image)) / (np.max(gray_image) - np.min(gray_image))\par
+plt.imshow(norm_image)\par
+
+\pard\sl240\slmult1\par
+
+\pard\sl276\slmult1\ul\b\fs28 Histogram\par
+\ulnone\b0\fs22 In digital image processing, the histogram is used for graphical representation of a digital image. A graph is a plot by the number of pixels for each tonal value. Nowadays, image histogram is present in digital cameras.\par
+In a graph, the horizontal axis of the graph is used to represent tonal variations whereas the vertical axis is used to represent the number of pixels in that particular pixel. Black and dark areas are represented in the left side of the horizontal axis, medium grey color is represented in the middle, and the vertical axis represents the size of the area.\par
+\par
+\b Applications of Histograms\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\sl276\slmult1\b0 In digital image processing, histograms are used for simple calculations in software.\par
+{\pntext\f3\'B7\tab}It is used to analyze an image. Properties of an image can be predicted by the detailed study of the histogram.\par
+{\pntext\f3\'B7\tab}The brightness of the image can be adjusted by having the details of its histogram.\par
+{\pntext\f3\'B7\tab}The contrast of the image can be adjusted according to the need by having details of the x-axis of a histogram.\par
+{\pntext\f3\'B7\tab}It is used for image equalization. Gray level intensities are expanded along the x-axis to produce a high contrast image.\par
+{\pntext\f3\'B7\tab}Histograms are used in thresholding as it improves the appearance of the image.\par
+{\pntext\f3\'B7\tab}If we have input and output histogram of an image, we can determine which type of transformation is applied in the algorithm.\par
+
+\pard\sl276\slmult1\par
+\b Enhancement Using Arithmetic/Logic Operations \par
+\b0\f2\'a1\f0  AND \par
+\f2\'a1\f0  OR\par
+\f2\'a1\f0  NOT \par
+\f2\'a1\f0  Subtraction \par
+\f2\'a1\f0  Addition \par
+\f2\'a1\f0  Multiplication \par
+\f2\'a1\f0  Division\par
+
+\pard\sl240\slmult1\par
+\b Arithmetic operations between two pixels a and b are denoted as follows\b0 :\par
+\b i) Addition: a + b\par
+\b0 Image addition is used in image averaging to reduce noise. This kind of operation was performed in image enhancement.\par
+\b ii) Subtracting: a - b\par
+\b0 Image subtraction is widely used in medical imaging. A very common example is the Digital Subtraction Angiography (DSA).\par
+Image Subtraction is basically used to get rid of background information.\par
+\b iii) Image multiplication: a \'d7 b\par
+iv) Image division: a/b\par
+\b0\i Both, Image Multiplication and Image Division are used to correct grey level shading that result from non-uniformities in illumination or in the sensor used.\par
+\i0\par
+\b Logical operations \par
+
+\pard\sl240\slmult1\b0 These operations can be combined to form other logic operations. Logic operations actually apply only to binary images. (Image having only two values, 0 and 1).\par
+
+\pard\sl240\slmult1\b\par
+
+\pard\ri-605\sl240\slmult1\tx9573\b0 a. \b AND(a AND b):\b0 The AND operator gives out 1 only when both \lquote a\rquote  and \lquote b\rquote  are equal to 1.\par
+
+\pard\sl240\slmult1 b\b . OR (a OR b):\b0 The OR operator gives out 1 if either \lquote a\rquote  or \lquote b\rquote  or both are equal to 1.\par
+
+\pard\sl240\slmult1 c. \b COMPLEMENT(NOT a):\b0 The COMPLEMENT (NOT) operator gives out 1 when a = 0\par
+\par
+\ul\b\fs28 Spatial Filtering \par
+\ulnone\b0\fs22 Spatial Filtering technique is used directly on pixels of an image. Mask is usually considered to be added in size so that it has specific center pixel. This mask is moved on the image such that the center of the mask traverses all image pixels.\par
+\par
+Classification on the basis of linearity:\par
+There are two types:\par
+\b 1. Linear Spatial Filter\par
+2. Non-linear Spatial Filter \par
+\b0\par
+General Classification:\par
+\b Smoothing Spatial Filter: \b0 Smoothing filter is used for blurring and noise reduction in the image. Blurring is pre-processing steps for removal of small details and Noise Reduction is accomplished by blurring.\par
+\b Types of Smoothing Spatial Filter:\par
+\b0 1. \ul Linear Filter (Mean Filter)\ulnone\par
+
+\pard\sl240\slmult1 Linear spatial filter is simply the average of the pixels contained in the neighborhood of the filter mask. The idea is replacing the value of every pixel in an image by the average of the grey levels in the neighborhood define by the filter mask.\par
+\ul Types of Mean filter:\par
+\ulnone (i) Averaging filter: It is used in reduction of the detail in image. All coefficients are equal.\par
+(ii) Weighted averaging filter: In this, pixels are multiplied by different coefficients. Center pixel is multiplied by a higher value than average filter.\par
+
+\pard\sl240\slmult1\par
+2. \ul Order Statistics (Non-linear) filter \par
+\ulnone It is based on the ordering the pixels contained in the image area encompassed by the filter. It replaces the value of the center pixel with the value determined by the ranking result. Edges are better preserved in this filtering.\par
+\ul Types of Order statistics filter:\par
+\ulnone (i) Minimum filter: 0th percentile filter is the minimum filter. The value of the center is replaced by the smallest value in the window.\par
+(ii) Maximum filter: 100th percentile filter is the maximum filter. The value of the center is replaced by the largest value in the window.\par
+(iii) Median filter: Each pixel in the image is considered. First neighboring pixels are sorted and original values of the pixel is replaced by the median of the list.\par
+\par
+\b Sharpening Spatial Filter: \b0 It is also known as derivative filter. The purpose of the sharpening spatial filter is just the opposite of the smoothing spatial filter. Its main focus in on the removal of blurring and highlight the edges. It is based on the first and second order derivative.\par
+\par
+.\par
+}
+ 
