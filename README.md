@@ -560,7 +560,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/179968055-4eaedf24-50b4-4106-a09e-8d753e7a2efd.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/179968087-ef89ae66-cd98-4cf4-9b05-66749ffa5c49.png)<br>
 
-#1
+#
 from PIL import Image, ImageChops, ImageFilter<br>
 from matplotlib import pyplot as plt<br>
 #Create a PIL Image objects<br>
@@ -584,10 +584,10 @@ greyscale<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888368-c8955b7b-bb31-47e8-bc64-06f5ddcff6f5.png)<br>
-![image](https://user-images.githubusercontent.com/97939284/187888387-d48b4fa3-9084-438d-a263-6d857ff25bde.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888408-5411525d-47c6-408c-b2ad-ab75607cc9b2.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888431-702491d8-c7ad-4597-9d8b-715bca146568.png)<br>
-#2
+
+#
 image = merged<br>
 print('image size:',<br>
 image.size,
@@ -621,7 +621,7 @@ blur = greyscale.filter(ImageFilter.GaussianBlur (radius=1))<br>
 edge = blur.filter(ImageFilter.FIND_EDGES)<br>
 edge<br>
 
-#$
+
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888844-9c19b7f5-3b17-46b0-af76-8f4884cc54b0.png)
 
@@ -655,7 +655,7 @@ cv2.imwrite('dimage_inpainted.png', dst)<br>
 plt.imshow(dst)<br>
 plt.show()<br>
 OUTPUT:<br>
-#5
+
 ![image](https://user-images.githubusercontent.com/97939284/187889006-b708eb81-43a7-4f12-9183-16cdf9a81dc4.png)
 ![image](https://user-images.githubusercontent.com/97939284/187889025-9847f19d-3a5e-42b2-b737-3924a8b46ec9.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889049-6d438d73-6987-4996-b189-ed808ec8cfb6.png)<br>
@@ -665,11 +665,10 @@ import numpy as np<br>
 import pandas as pd<br>
 import matplotlib.pyplot as plt<br>
 plt.rcParams['figure.figsize'] = (10, 8)<br>
-#6
+
 ![image](https://user-images.githubusercontent.com/97939284/187889209-5eafa3f2-8f4a-4f30-8622-f66389439ba1.png)<br>
 OUTPUT<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889232-c3bfc48b-3925-4c20-b16c-ea2dbff00810.png)<br>
-![image](https://user-images.githubusercontent.com/97939284/187889284-eb99a4cf-b53b-415c-9fa0-46c253ff8e54.png)
 
 #7
 from skimage.util import random_noise<br>
