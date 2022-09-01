@@ -560,6 +560,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/179968055-4eaedf24-50b4-4106-a09e-8d753e7a2efd.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/179968087-ef89ae66-cd98-4cf4-9b05-66749ffa5c49.png)<br>
 
+#1
 from PIL import Image, ImageChops, ImageFilter<br>
 from matplotlib import pyplot as plt<br>
 #Create a PIL Image objects<br>
@@ -586,7 +587,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888387-d48b4fa3-9084-438d-a263-6d857ff25bde.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888408-5411525d-47c6-408c-b2ad-ab75607cc9b2.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888431-702491d8-c7ad-4597-9d8b-715bca146568.png)<br>
-
+#2
 image = merged<br>
 print('image size:',<br>
 image.size,
@@ -595,7 +596,7 @@ image.size,
 '\nimage height:',image.height,'| also represented by:',image.size[1],)<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888524-f8620e84-4aa1-4d7a-8e33-cdf157e5edab.png)<br>
-
+#3
 ![image](https://user-images.githubusercontent.com/97939284/187888594-d11702fd-2cd6-4edc-9622-9fb123ee7d19.png)<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888657-94651230-6bb5-4edd-8368-bce35ed683c6.png)
@@ -620,7 +621,7 @@ blur = greyscale.filter(ImageFilter.GaussianBlur (radius=1))<br>
 edge = blur.filter(ImageFilter.FIND_EDGES)<br>
 edge<br>
 
-
+#$
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/187888844-9c19b7f5-3b17-46b0-af76-8f4884cc54b0.png)
 
@@ -654,6 +655,7 @@ cv2.imwrite('dimage_inpainted.png', dst)<br>
 plt.imshow(dst)<br>
 plt.show()<br>
 OUTPUT:<br>
+#5
 ![image](https://user-images.githubusercontent.com/97939284/187889006-b708eb81-43a7-4f12-9183-16cdf9a81dc4.png)
 ![image](https://user-images.githubusercontent.com/97939284/187889025-9847f19d-3a5e-42b2-b737-3924a8b46ec9.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889049-6d438d73-6987-4996-b189-ed808ec8cfb6.png)<br>
@@ -663,13 +665,13 @@ import numpy as np<br>
 import pandas as pd<br>
 import matplotlib.pyplot as plt<br>
 plt.rcParams['figure.figsize'] = (10, 8)<br>
-
+#6
 ![image](https://user-images.githubusercontent.com/97939284/187889209-5eafa3f2-8f4a-4f30-8622-f66389439ba1.png)<br>
 OUTPUT<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889232-c3bfc48b-3925-4c20-b16c-ea2dbff00810.png)<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889284-eb99a4cf-b53b-415c-9fa0-46c253ff8e54.png)
 
-
+#7
 from skimage.util import random_noise<br>
 fruit_image = plt.imread('fruitts .jpeg')<br>
 
@@ -680,7 +682,6 @@ noisy_image = random_noise (fruit_image)<br>
 plot_comparison (fruit_image, noisy_image, 'Noisy image')<br>
 OUTPUT<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889385-64d623f3-74ff-4e7c-b4b8-8d531fc424d1.png)<br>
-![image](https://user-images.githubusercontent.com/97939284/187889401-0bd8a7ca-ede2-4e8b-b4c5-5fa3e2cee133.png)
 
 
 from skimage.restoration import denoise_tv_chambolle<br>
@@ -693,7 +694,7 @@ denoised_image = denoise_tv_chambolle (noisy_image, multichannel=True)<br>
 plot_comparison (noisy_image, denoised_image, 'Denoised Image')<br>
 OUTPUT<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889465-c224023a-0acb-4b41-8300-5134f951de09.png)
-![image](https://user-images.githubusercontent.com/97939284/187889476-569baf90-8bad-406a-b0af-a2e2db5a5ff7.png)
+
 
 
 from skimage.restoration import denoise_bilateral<br>
@@ -706,21 +707,24 @@ denoised_image = denoise_bilateral (landscape_image, multichannel=True)<br>
 plot_comparison (landscape_image, denoised_image, 'Denoised Image')<br>
 OUTPUT<br>
 ![image](https://user-images.githubusercontent.com/97939284/187889558-6b0d20db-06af-43ca-b5ff-00cf800a60fe.png)<br>
-![image](https://user-images.githubusercontent.com/97939284/187889573-272a6aaa-7334-4b82-aef4-5181da6da734.png)
 
 
-from skimage.segmentation import slic<br>
-from skimage.color import label2rgb<br>
-face_image=plt.imread('face.jpg')<br>
-#obtain the segmentation with 400 regions<br>
-segments = slic(face_image, n_segments=400)<br>
-#Put segments on top of original image to compare<br>
-segmented_image = label2rgb(segments, face_image, kind="avg")<br>
-#Show the segmented image<br>
-plot_comparison (face_image, segmented_image, 'Segmented image, 400 superpixels')<br>
+from skimage.segmentation import slic
+from skimage.color import label2rgb
+import matplotlib.pyplot as plt
+import numpy as np
+face_image = plt.imread('face.jpg')
+segments = slic(face_image, n_segments=400)
+segmented_image=label2rgb(segments,face_image,kind='avg')
+plt.imshow(face_image)
+plt.show()
+plt.imshow((segmented_image * 1).astype(np.uint8))
+plt.show()
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97939284/187891525-e7d1bb2c-8ef4-42e3-8b3c-ada6f2c1b367.png)
+![image](https://user-images.githubusercontent.com/97939284/187897698-5891e368-cada-408f-98a3-cf3e28ddd413.png)
+![image](https://user-images.githubusercontent.com/97939284/187897715-165c6d0c-199c-4eb1-8753-cb24f8a5507a.png)
+
 
 ![image](https://user-images.githubusercontent.com/97939284/187891586-0cb50c3e-cfd6-4812-8baf-88d69c87ebba.png)<br>
 OUTPUT:<br>
@@ -888,8 +892,28 @@ plt.show()
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/187896017-fe83c5e5-d4a4-4c57-a941-e234da3f85ce.png)
 
+#Edge detection using Prewitt operator
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+img = cv2.imread('a.jpeg')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+img_gaussian = cv2.GaussianBlur (gray, (3,3),0)
 
+#prewitt
+kernelx= np.array([[1,1,1], [0,0,0], [-1,-1,-1]])
+kernely = np.array([[-1,0,1],[-1,0,1],[-1,0,1]]) 
+img_prewittx = cv2.filter2D(img_gaussian, -1, kernelx)
+img_prewitty = cv2.filter2D(img_gaussian, -1, kernely)
 
+cv2.imshow("Original Image", img)
+cv2.imshow("Prewitt x", img_prewittx)
+cv2.imshow("Prewitt y", img_prewitty)
+cv2.waitKey()
+cv2.imshow("Prewitt", img_prewittx + img_prewitty)
+cv2.destroyAllWindows()
+
+OUTPUT:<br>
 
 
 
